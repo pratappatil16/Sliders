@@ -1,0 +1,46 @@
+.Continous {
+  text-align: center;
+}
+
+.slideContainer {
+  width: 75%;
+  margin: 200px auto;
+  position: relative;
+}
+
+.custom-slider {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  outline: none;
+  background: linear-gradient(to right, #4CAF50 0%, #ddd 0%);
+  border-radius: 12px;
+}
+
+.custom-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background: #4CAF50;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 0 5px white, 0 0 0 6px rgb(208, 206, 206);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-slider:hover::-webkit-slider-thumb,
+.custom-slider:focus::-webkit-slider-thumb {
+  transform: scale(1.1); 
+  box-shadow: 0 0 0 5px white, 0 0 0 8px rgb(208, 206, 206);
+}
+
+.slider-label {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px; /* Adjust this value to control the distance from the slider */
+  font-size: 24px; /* Adjust font size as needed */
+  color: black; /* Color of the text */
+}

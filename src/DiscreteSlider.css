@@ -1,0 +1,46 @@
+/* Container for the discrete slider */
+.discrete-slider-container {
+  text-align: center;
+  margin-top: 50px;
+  width: 75%;
+  margin: 200px auto;
+}
+.slider-values {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Slider track styling */
+.discrete-slider {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  outline: none;
+  background: linear-gradient(to right, #4CAF50 0%, #ddd 0%);
+  border-radius: 12px;
+  position: relative;
+}
+
+/* Slider thumb styling */
+.discrete-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background: #4CAF50;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 0 5px white, 0 0 0 6px rgba(173, 216, 230, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover and focus states for the slider thumb */
+.discrete-slider:hover::-webkit-slider-thumb,
+.discrete-slider:focus::-webkit-slider-thumb {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 5px white, 0 0 0 8px rgba(173, 216, 230, 0.7);
+}
+
